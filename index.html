@@ -2,23 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <title>Issa Jaramillo - Portfolio</title>
 </head>
-<body>
+<body id="home">
     <header>
-        <h1>Título Principal</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">Issa Jaramillo <i class="fas fa-laptop-code"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-  
-    
-    
+
+    <section class="hero">
+        <div class="container text-center">
+            <img src="./images/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle my-4" width="150">
+            <h1>Hola, soy <span class="text-primary">Issa Jaramillo</span></h1>
+            <p class="lead">Una apasionada full stack developer</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="education" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Mi educacion</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <h5>Full Stack Developer Bootcamp</h5>
+                        <p class="text-muted">2023</p>
+                        <p>HENRY</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Responsive-Web-Design Certification</h5>
+                        <p class="text-muted">2024</p>
+                        <p>FreeCodeCamp</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Proyectos</h2>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="./imagenes/dogs.png" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Dogs App</h5>
+                                <p class="card-text"></p>
+                                <a href="https://pi-dogs-coral-sigma.vercel.app/" target="_blank" class="btn btn-primary" rel="noopener" >Live Demo</a>
+                                <a href="https://github.com/Issa-jaramillo/PI-dogs" target="_blank" class="btn btn-secondary" rel="noopener" >GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="./imagenes/videogames.png" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Videogames</h5>
+                                <p class="card-text"></p>
+                                <a href="https://pi-videogames-pink-xi.vercel.app/" target="_blank" class="btn btn-primary" rel="noopener" >Live Demo</a>
+                                <a href="https://github.com/Issa-jaramillo/PI-videogames" target="_blank" class="btn btn-secondary" rel="noopener" >GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Sobre mi</h2>
+                <div class="row mt-4">
+                    <!-- <div class="col-md-6">
+                        <p>
+                            I am a creative and driven full stack developer based in Argentina. With a background in business administration, I decided to pivot to web development to follow my passion for creating and problem-solving.
+                        </p>
+                        <p>
+                            I have worked on various projects, from small personal websites to large-scale applications. I am always eager to learn new technologies and improve my skills.
+                        </p>
+                    </div> -->
+                    <div class="col-md-6">
+                        <img src="./images/about.jpg" alt="About Me" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2>Contact Me</h2>
+                <p class="lead">Let's work together to create something amazing.</p>
+                <a href="mailto:issakaterinejaramilloalvarez@gmail.com" class="btn btn-primary">Email</a>
+                <div class="mt-4">
+                    <a href="https://www.linkedin.com/in/issa-jaramillo-12380a281/" target="_blank" class="me-3" rel="noopener"  ><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/Issa-jaramillo" target="_blank" class="me-3" rel="noopener" ><i class="fab fa-github fa-2x" ></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-3 bg-dark text-white text-center">
+        <p>&copy; 2024 Issa Jaramillo.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
