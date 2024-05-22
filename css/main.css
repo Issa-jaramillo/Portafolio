@@ -79,7 +79,11 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 10px;
-  margin-top: 12px; }
+  margin-top: 12px;
+  background-color: #03121d;
+  /* Cambia el color de fondo */
+  color: white;
+  /* Cambia el color del texto */ }
 
 .header-title {
   font-size: 2rem; }
@@ -408,6 +412,57 @@ body {
         padding: 5px; }
     .footer-nav ul li a:hover {
       color: #b2b1b1; }
+
+.card {
+  margin-top: 0;
+  /* Eliminar el margen superior */
+  margin-bottom: 20px;
+  /* Espacio entre tarjetas */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  overflow: hidden;
+  /* Evitar que los bordes redondeados afecten la imagen */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  background: linear-gradient(to right, #000000, #e52e71);
+  /* Degradado de colores */
+  color: white;
+  /* Color del texto blanco para contraste */ }
+
+.card-body {
+  padding: 15px;
+  /* Espacio interno de la tarjeta */
+  margin-top: 0;
+  /* Eliminar el margen superior */ }
+
+.card-img-top {
+  margin-top: 0%;
+  /* Eliminar el margen superior */
+  max-height: 200px;
+  /* Altura máxima de la imagen */
+  width: 100%;
+  /* Ancho completo de la imagen */ }
+
+.card-title {
+  margin-top: 0% !important;
+  margin-bottom: 0px;
+  /* Espacio bajo el título del proyecto */
+  color: inherit;
+  /* Color del texto heredado para el título */
+  background: linear-gradient(to right, #000000, #e52e71);
+  /* Degradado de colores */
+  padding: 8px 12px;
+  /* Espaciado interno para el título */
+  border-radius: 5px;
+  /* Bordes redondeados */ }
+
+.text-center {
+  text-align: center;
+  /* Centrar el texto y elementos dentro de la tarjeta */ }
+
+.mt-2 {
+  margin-top: 10px;
+  /* Espacio superior para los enlaces */ }
 
 @media (min-width: 768px) {
   #btn-hamburger {
