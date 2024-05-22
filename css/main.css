@@ -290,8 +290,11 @@ body {
   box-shadow: rgba(95, 144, 192, 0.74) 0px 20px 30px -10px; }
 
 #about {
-  background: #f8f9fa;
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  background-color: #03121d;
+  /* Cambia el color de fondo */
+  color: white;
+  /* Cambia el color del texto */ }
 
 #about h2 {
   margin-top: 60px;
@@ -382,7 +385,10 @@ body {
 .contactMe-footer {
   border-top: 1.5px solid #614385;
   display: flex;
+  background-color: #03121d;
+  /* Cambia el color de fondo */
   color: white;
+  /* Cambia el color del texto */
   font-size: 1.2rem;
   flex-direction: row;
   justify-content: space-around;
