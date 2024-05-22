@@ -246,21 +246,15 @@
         grid-template-columns: 50% auto ;
         grid-template-rows: 90vh;
     }
-    .aboutMe-pic{
-        display: block;
-        border-radius: 10px;
-        margin-right: 20px;
-        grid-area: amImg;
-        background-image: url(/images/aboutMe.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        -moz-box-shadow: inset 10px 10px 50px #fff;
-        -webkit-box-shadow: inset 10px 10px 50px #fff;
-        box-shadow: inset 80px 1px 50px #03121d, inset -80px -1px 50px #03121d ;
+    #about .aboutMe-pic img {
+        border-radius: 50%; /* Hace que la imagen sea redonda */
+        width: 250px; /* Ajusta este valor según sea necesario */
+        height: 250px; /* Ajusta este valor según sea necesario */
+        object-fit: cover;
+        border: none; /* Asegura que no haya borde alrededor de la imagen */
+        box-shadow: none; /* Asegura que no haya sombra alrededor de la imagen */
     }
-    // This line that i added here re not doing anything
-    // fix it
+    
 
     .aboutMe-title{
         display: flex;

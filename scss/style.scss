@@ -436,23 +436,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: transparent; /* Asegura que el fondo del contenedor sea transparente */
-    padding: 0; /* Elimina cualquier padding */
-    margin: 0; /* Elimina cualquier margen */
-    border: none; /* Asegura que no haya borde alrededor del contenedor */
+    background: transparent; 
+    padding: 0; 
+    margin: 0; 
+    border: none; 
 }
 
 #about .aboutMe-pic img {
     border-radius: 50%;
-    width: 250px; /* Ajusta este valor según sea necesario */
-    height: 250px; /* Ajusta este valor según sea necesario */
+    width: 250px; 
+    height: 250px; 
     object-fit: cover;
-    border: none; /* Asegura que no haya borde alrededor de la imagen */
-    box-shadow: none; /* Asegura que no haya sombra alrededor de la imagen */
+    border: none; 
+    box-shadow: none; 
 }
 
 #about .row {
-    margin-top: 2rem; /* Agrega espacio entre los elementos de la fila */
+    margin-top: 2rem; 
 }
 
 #about .col-md-6 {
@@ -462,8 +462,8 @@ body {
 }
 
 #about .col-md-6 p {
-    font-size: 1.2rem; /* Tamaño de fuente para el texto */
-    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 1.2rem; 
+    line-height: 1.6; 
 }
 
 
