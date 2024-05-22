@@ -7,8 +7,9 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
   list-style: none; }
-  * a {
-    text-decoration: none; }
+
+a {
+  text-decoration: none; }
 
 /* Estilos generales */
 body {
@@ -17,9 +18,7 @@ body {
 
 .dark-mode {
   background-color: #03121d;
-  /* Cambiar el color de fondo a un tono azul oscuro */
-  color: wheat;
-  /* Cambiar el color del texto a un tono claro */ }
+  color: wheat; }
 
 /* Estilos adicionales si es necesario */
 .nav {
@@ -38,8 +37,9 @@ body {
   background-color: transparent;
   border: none;
   transition: 0.25s; }
-  #btn-hamburger i {
-    font-size: 40px; }
+
+#btn-hamburger i {
+  font-size: 40px; }
 
 .bi-list:hover {
   transition: 1s;
@@ -79,10 +79,12 @@ body {
 
 .header-title {
   font-size: 2rem; }
-  .header-title span {
-    margin-left: 50px; }
-    .header-title span .highlight {
-      color: wheat; }
+
+.header-title span {
+  margin-left: 50px; }
+
+.header-title .highlight {
+  color: wheat; }
 
 .profile {
   height: 100vh; }
@@ -136,9 +138,10 @@ body {
   color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   flex-wrap: wrap; }
-  .containerPath div {
-    border-right: 1px solid wheat;
-    width: 350px; }
+
+.containerPath div {
+  border-right: 1px solid wheat;
+  width: 350px; }
 
 .institution {
   padding: 10px;
@@ -188,9 +191,7 @@ body {
 /* Variables de colores */
 :root {
   --light-color: #ffffff;
-  /* Color claro */
-  --dark-color: #333333;
-  /* Color oscuro */ }
+  --dark-color: #333333; }
 
 /* Estilos para la sección de tecnologías */
 #technologies .section-title {
@@ -201,20 +202,23 @@ body {
 #technologies .tech-item {
   margin-top: 2rem;
   transition: transform 0.3s, box-shadow 0.3s; }
-  #technologies .tech-item i {
-    margin-bottom: 1rem;
-    transition: color 0.3s; }
-  #technologies .tech-item p {
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
-    color: var(--dark-color); }
-  #technologies .tech-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
-    #technologies .tech-item:hover i {
-      color: var(--primary-color); }
 
-/* Estilos específicos para los íconos */
+#technologies .tech-item i {
+  margin-bottom: 1rem;
+  transition: color 0.3s; }
+
+#technologies .tech-item p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--dark-color); }
+
+#technologies .tech-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+#technologies .tech-item:hover i {
+  color: var(--primary-color); }
+
 .fa-html5 {
   color: #e34c26; }
 
@@ -249,25 +253,28 @@ body {
   min-height: 800px;
   z-index: -10;
   background-image: linear-gradient(180deg, #053a5d 0%, #082b42 31%, #03121d 100%); }
-  .service-pic h3 {
-    font-size: 3.5vh;
-    padding: 10px;
-    text-align: center;
-    color: white; }
-    .service-pic h3 span {
-      background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
-      background-size: 400% 400%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: gradient 9s ease infinite; }
-  .service-pic h6 {
-    color: #aaaaaa;
-    font-size: 1.2rem;
-    padding: 10px;
-    font-weight: 700;
-    text-align: center; }
+
+.service-pic h3 {
+  font-size: 3.5vh;
+  padding: 10px;
+  text-align: center;
+  color: white; }
+
+.service-pic h3 span {
+  background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 9s ease infinite; }
+
+.service-pic h6 {
+  color: #aaaaaa;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: 700;
+  text-align: center; }
 
 @keyframes gradient {
   0% {
@@ -293,8 +300,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px; }
-  .about-me p {
-    line-height: 1.5; }
+
+.about-me p {
+  line-height: 1.5; }
 
 /* FOOTER */
 footer {
@@ -304,10 +312,80 @@ footer {
   justify-content: center;
   padding: 20px;
   margin-top: 20px; }
-  footer p {
-    font-size: 0.8rem; }
-    footer p a {
-      color: #b1a7a7;
-      transition: 0.3s; }
-      footer p a:hover {
-        color: white; }
+
+footer p {
+  font-size: 0.8rem; }
+
+footer p a {
+  color: #b1a7a7;
+  transition: 0.3s; }
+
+footer p a:hover {
+  color: white; }
+
+/* Card Styles */
+:root {
+  --modo-claro-bg-start: #fa8ed2;
+  /* Color de inicio del degradado en modo claro */
+  --modo-claro-bg-end: #f0f0f0;
+  /* Color de fin del degradado en modo claro */
+  --modo-oscuro-bg-start: #71ceec;
+  /* Color de inicio del degradado en modo oscuro */
+  --modo-oscuro-bg-end: #2c2c2c;
+  /* Color de fin del degradado en modo oscuro */
+  --card-border-color: #ccc;
+  /* Color del borde de la tarjeta */
+  --card-shadow-color: rgba(0, 0, 0, 0.1);
+  /* Color de la sombra de la tarjeta */ }
+
+.card {
+  background: linear-gradient(to bottom right, var(--modo-oscuro-bg-start), var(--modo-oscuro-bg-end));
+  /* Degradado en modo claro */
+  background: linear-gradient(to bottom right, var(--modo-claro-bg-start), var(--modo-claro-bg-end));
+  /* Degradado en modo claro */
+  border: 1px solid var(--card-border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--card-shadow-color);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; }
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px var(--card-hover-shadow-color);
+  /* Sombra al pasar el ratón */ }
+
+.card img {
+  border-bottom: 1px solid #eee;
+  /* Borde inferior de la imagen */ }
+
+.card-title {
+  font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  color: var(--primary-color);
+  /* Color del título */ }
+
+.card-body {
+  padding: 20px; }
+
+.btn-primary {
+  background-color: var(--primary-color);
+  /* Color de fondo del botón primario */
+  border: none;
+  transition: background-color 0.3s; }
+
+.btn-primary:hover {
+  background-color: var(--btn-hover-bg-primary);
+  /* Color de fondo del botón primario al pasar el ratón */ }
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  /* Color de fondo del botón secundario */
+  border: none;
+  transition: background-color 0.3s; }
+
+.btn-secondary:hover {
+  background-color: var(--btn-hover-bg-secondary);
+  /* Color de fondo del botón secundario al pasar el ratón */ }
+
+.text-center {
+  text-align: center; }
