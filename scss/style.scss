@@ -15,40 +15,20 @@
     }
 }
 
-// FOR MOBILE
 
-
-// NAVBAR
-
-
-#index{
-    //OP1 background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
-    background: linear-gradient(90deg,  #5aa0e29d,#0697aac2,#f8b195  );
-    // background: linear-gradient(90deg,  #f8b195,#6c5b7d,#325d7f  );
-    background-size: 400% 400%;
-    animation: backgroundChanger 15s ease infinite;
-}
-
-@keyframes backgroundChanger {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.container-nav{
-    background-color: rgba(0, 0, 0, 0.226);
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(7px);
-}
+/* Estilos generales */
+body {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Estilos adicionales si es necesario */
+  
 .nav{
     display: flex;
     justify-content: space-between;
@@ -166,23 +146,7 @@
 
 //  MAIN
 // Education
-#education{
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    // height: 100vh;
-    min-height: 100%;
-    width: 100%;
-    background-image: linear-gradient(180deg, #3cffeb00 0%, #4a82a1 31%, #053a5d 100%);  
-    h2{
-        padding: 8px;
-        text-align: center;
-        font-size: 2rem;
-        background:  -webkit-linear-gradient(90deg,#20bdff,#a5fecb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
+
 .educationContainer{
     display: flex;
     margin: 10px;
@@ -224,27 +188,8 @@
 ;
     
 }
-.wrapperSkillsLanguages{
-    h2{
-        text-align: center;
-        margin-right: 50px;
-    }
-}
-.curriculumContainer{
 
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .fa-cloud-download{
-        font-size: 3rem;
-        background: -webkit-linear-gradient(90deg,#20bdff,#a5fecb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-align: center;
-        padding: 8px;
-        
-    }
+
    
     .cv{
         font-size: 2rem;
@@ -262,56 +207,7 @@
     .cv:hover{
         box-shadow: none;
     }
-}
-.skillsTitle{
-    text-align: center;
-}
-.skills-subtitles{
-    color:wheat;
-    font-family: 'Rhodium Libre', serif;
-}
-.containerSkills{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    border: 0.2px solid wheat;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 30px;
-    padding: 20px;
-    text-align: center;
-}
-.softSkills{
-    color: white;
-    ul li{
-        list-style:disc;
-        padding: 1px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-}
-.softSkills-items{
-    display: flex;
-    text-align: center;
-    gap: 30px;
-    padding: 10px;
-}
-.countriesFlags{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 10px;
-    gap: 20px;
-    color: beige;
-    div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        span{
-            font-size: small;
-        }
-    }
-}
+
 .flags{
     width: 40px;
     margin-bottom: 3px;
@@ -456,74 +352,121 @@
     box-shadow: rgba(95, 144, 192, 0.74) 0px 20px 30px -10px; 
 }
 
-// SECTION ABOUT ME
-#aboutMe{
-    height: 100vh;
-    width: 100%;
-    background-image: url(/images/aboutMe.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    border-top: 0.1px solid black;
-    // border: .1px solid rgba(255, 255, 255, 0);
-        h2{
-        margin-top: 60px;
-        text-align: center;
-        padding: 8px;
-        font-size: 2.5rem;
-        background: -webkit-linear-gradient(90deg,#20bdff,#a5fecb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+// // SECTION ABOUT ME
+// #aboutMe {
+//     height: 100vh;
+//     width: 100%;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     color: white;
+//     border-top: 0.1px solid black;
+//     h2 {
+//         margin-top: 60px;
+//         text-align: center;
+//         padding: 8px;
+//         font-size: 2.5rem;
+//         background: -webkit-linear-gradient(90deg, #20bdff, #a5fecb);
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//     }
+// }
+
+// .aboutMe-body {
+//     h3 {
+//         text-align: center;
+//     }
+// }
+
+// .container-aboutMe {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+// }
+
+// .aboutMe-body {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     height: 100%;
+//     h3 {
+//         font-family: 'Rhodium Libre', serif;
+//         width: 70%;
+//         font-size: 6vw;
+//         background-image: linear-gradient(90deg, #20bcff5c, #38383836);
+//         background-repeat: no-repeat;
+//         border-radius: 10px;
+//         background-size: 0% 100%;
+//         background-position-x: right;
+//         transition: background-size 500ms;
+//         margin-top: 40px;
+//     }
+//     h3:hover {
+//         background-size: 100% 100%;
+//         background-position-x: left;
+//     }
+//     p {
+//         width: 90%;
+//         text-align: center;
+//         font-size: 4vw;
+//         line-height: 3vh;
+//     }
+// }
+
+// .aboutMe-pic img {
+//     border-radius: 50%;
+// }
+#about {
+    background: #f8f9fa;
+    padding: 5rem 0;
 }
 
-// Fix this part, i could put the img at the bg 
-// and center the text 
-.aboutMe-body{
-    h3{
-        text-align: center;
-    }
+#about h2 {
+    margin-top: 60px;
+    text-align: center;
+    padding: 8px;
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(90deg, #20bdff, #a5fecb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#about .aboutMe-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: transparent; /* Asegura que el fondo del contenedor sea transparente */
+    padding: 0; /* Elimina cualquier padding */
+    margin: 0; /* Elimina cualquier margen */
+    border: none; /* Asegura que no haya borde alrededor del contenedor */
 }
 
-.container-aboutMe{
+#about .aboutMe-pic img {
+    border-radius: 50%;
+    width: 250px; /* Ajusta este valor según sea necesario */
+    height: 250px; /* Ajusta este valor según sea necesario */
+    object-fit: cover;
+    border: none; /* Asegura que no haya borde alrededor de la imagen */
+    box-shadow: none; /* Asegura que no haya sombra alrededor de la imagen */
+}
+
+#about .row {
+    margin-top: 2rem; /* Agrega espacio entre los elementos de la fila */
+}
+
+#about .col-md-6 {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: center;
+}
 
+#about .col-md-6 p {
+    font-size: 1.2rem; /* Tamaño de fuente para el texto */
+    line-height: 1.6; /* Espaciado entre líneas */
 }
-.aboutMe-body{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:space-evenly;
-    height: 100%;
-    h3{
-    font-family: 'Rhodium Libre', serif;
-    width: 70%;
-    font-size: 6vw;
-    background-image:linear-gradient(90deg, #20bcff5c, #38383836);
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    background-size: 0% 100%;
-    background-position-x: right;
-    transition: background-size 500ms;
-    margin-top: 40px;
-    }  
-    h3:hover{
-        background-size: 100% 100%;
-        background-position-x: left;
-    } 
-    p{
-        width: 90%;
-        text-align: center;
-        font-size: 4vw;
-        line-height: 3vh;
-    }
-}
-.aboutMe-pic{
-    display: none;
-}
+
+
 
 // SECTION CONTACT ME
 #contactMe{
