@@ -388,18 +388,58 @@ footer p a {
 footer p a:hover {
     color: white;
 }
-/* Card Styles */
+
+
+/* Variables de tema en el :root */
 :root {
-    --modo-claro-bg-end: #f0f0f0; /* Color de fin del degradado en modo claro */
-    --modo-oscuro-bg-end: #2c2c2c; /* Color de fin del degradado en modo oscuro */
-    --card-border-color: #ccc; /* Color del borde de la tarjeta */
-    --card-shadow-color: rgba(0, 0, 0, 0.1); /* Color de la sombra de la tarjeta */
+    --modo-claro-bg-start: #f8f9fa;
+    --modo-claro-bg-end: #e9ecef;
+    --modo-claro-card-bg: #ffffff;
+    --link-color-claro: #5a5a5a;
+    --link-hover-color-claro: #000000;
+
+    --modo-oscuro-bg-start: #1c1e21;
+    --modo-oscuro-bg-end: #343a40;
+    --modo-oscuro-card-bg: #2a2e35;
+    --link-color-oscuro: #cccccc;
+    --link-hover-color-oscuro: #ffffff;
+
+    --card-border-color: #100f0f;
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+    --card-hover-shadow-color: rgba(0, 0, 0, 0.2);
+    --primary-color: #868e96;
+    --secondary-color: #868e96;
+    --btn-hover-bg-primary: #5a6268;
+    --btn-hover-bg-secondary: #5a6268;
+}
+
+/* Variables específicas para los temas */
+[data-theme="dark"] {
+    --link-color: var(--link-color-oscuro);
+    --link-hover-color: var(--link-hover-color-oscuro);
+    --card-bg: linear-gradient(to bottom right, var(--modo-oscuro-bg-start), var(--modo-oscuro-bg-end));
+    --card-inner-bg: var(--modo-oscuro-card-bg);
+}
+
+[data-theme="light"] {
+    --link-color: var(--link-color-claro);
+    --link-hover-color: var(--link-hover-color-claro);
+    --card-bg: linear-gradient(to bottom right, var(--modo-claro-bg-start), var(--modo-claro-bg-end));
+    --card-inner-bg: var(--modo-claro-card-bg);
+}
+
+.card a {
+    color: var(--link-color);
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: var(--link-hover-color);
 }
 
 .card {
     width: auto;
-    background: linear-gradient(to bottom right, var(--modo-oscuro-bg-start), var(--modo-oscuro-bg-end)); /* Degradado en modo claro */
-    // background: linear-gradient(to bottom right, var(--modo-claro-bg-start), var(--modo-claro-bg-end)); /* Degradado en modo claro */
+    background: var(--card-bg);
     border: 1px solid var(--card-border-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px var(--card-shadow-color);
@@ -407,20 +447,19 @@ footer p a:hover {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 12px var(--card-hover-shadow-color); /* Sombra al pasar el ratón */
+    box-shadow: 0 8px 12px var(--card-hover-shadow-color);
 }
 
 .card img {
-    border-bottom: 1px solid #eee; /* Borde inferior de la imagen */
+    border-bottom: 1px solid #eee;
 }
 
 .card-title {
     font-size: 1.5rem;
     font-family: 'Merriweather', serif;
-    color: var(--primary-color); /* Color del título */
+    color: var(--primary-color);
 }
 
 .card-body {
@@ -428,25 +467,134 @@ footer p a:hover {
 }
 
 .btn-primary {
-    background-color: var(--primary-color); /* Color de fondo del botón primario */
+    background-color: var(--primary-color);
     border: none;
     transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: var(--btn-hover-bg-primary); /* Color de fondo del botón primario al pasar el ratón */
+    background-color: var(--btn-hover-bg-primary);
 }
 
 .btn-secondary {
-    background-color: var(--secondary-color); /* Color de fondo del botón secundario */
+    background-color: var(--secondary-color);
     border: none;
     transition: background-color 0.3s;
 }
 
 .btn-secondary:hover {
-    background-color: var(--btn-hover-bg-secondary); /* Color de fondo del botón secundario al pasar el ratón */
+    background-color: var(--btn-hover-bg-secondary);
 }
 
 .text-center {
     text-align: center;
+}
+
+/* Estilos para la sección de educación */
+#education {
+    background-color: var(--modo-claro-bg-start);
+    background-image: var(--card-bg);
+    padding: 3rem 0;
+    transition: background-color 0.3s, background-image 0.3s;
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+#education .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#education .col-md-4 {
+    background: var(--card-inner-bg);
+    color: var(--link-color);
+    padding: 1.5rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--card-shadow-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#education .col-md-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px var(--card-hover-shadow-color);
+}
+
+#education h5 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+#education .text-muted {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+#education p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+/* Estilos para la sección de habilidades blandas */
+#soft-skills {
+    background-color: var(--modo-claro-bg-start);
+    padding: 3rem 0;
+    transition: background-color 0.3s;
+}
+
+#soft-skills h2 {
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+#soft-skills .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#soft-skills .col-md-6 {
+    background: var(--card-inner-bg);
+    color: var(--link-color);
+    padding: 1.5rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--card-shadow-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#soft-skills .col-md-6:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px var(--card-hover-shadow-color);
+}
+
+#soft-skills h4 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+#soft-skills p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Estilos específicos para el modo oscuro */
+[data-theme="dark"] #soft-skills {
+    background-color: var(--modo-oscuro-bg-start);
+    transition: background-color 0.3s;
+}
+
+[data-theme="dark"] #soft-skills .col-md-6 {
+    background: var(--modo-oscuro-card-bg);
 }
