@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
       if (isDarkMode) {
           // root.style.setProperty('--modo-claro-bg-start', '#333333'); // Color de inicio del degradado en modo oscuro
           // root.style.setProperty('--modo-claro-bg-end', '#2c2c2c'); // Color de fin del degradado en modo oscuro
-              root.style.setProperty('--modo-oscuro-bg-start', '#71ceec'); // Color de inicio del degradado en modo claro
+              // root.style.setProperty('--modo-oscuro-bg-start', '#71ceec'); // Color de inicio del degradado en modo claro
           root.style.setProperty('--modo-oscuro-bg-end', '#2c2c2c'); // Color de fin del degradado en modo claro
       } else {
           // root.style.setProperty('--modo-claro-bg-start', '#ffffff'); // Color de inicio del degradado en modo claro
           // root.style.setProperty('--modo-claro-bg-end', '#f0f0f0'); // Color de fin del degradado en modo claro
-           root.style.setProperty('--modo-claro-bg-start', '#fa8ed2'); // Color de inicio del degradado en modo oscuro
+          //  root.style.setProperty('--modo-claro-bg-start', '#fa8ed2'); // Color de inicio del degradado en modo oscuro
           root.style.setProperty('--modo-claro-bg-end', '#f0f0f0'); // Color de fin del degradado en modo oscuro
       }
   });

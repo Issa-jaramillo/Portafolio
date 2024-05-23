@@ -390,17 +390,16 @@ footer p a:hover {
 }
 /* Card Styles */
 :root {
-    --modo-claro-bg-start: #fa8ed2; /* Color de inicio del degradado en modo claro */
     --modo-claro-bg-end: #f0f0f0; /* Color de fin del degradado en modo claro */
-    --modo-oscuro-bg-start: #71ceec; /* Color de inicio del degradado en modo oscuro */
     --modo-oscuro-bg-end: #2c2c2c; /* Color de fin del degradado en modo oscuro */
     --card-border-color: #ccc; /* Color del borde de la tarjeta */
     --card-shadow-color: rgba(0, 0, 0, 0.1); /* Color de la sombra de la tarjeta */
 }
 
 .card {
+    width: auto;
     background: linear-gradient(to bottom right, var(--modo-oscuro-bg-start), var(--modo-oscuro-bg-end)); /* Degradado en modo claro */
-    background: linear-gradient(to bottom right, var(--modo-claro-bg-start), var(--modo-claro-bg-end)); /* Degradado en modo claro */
+    // background: linear-gradient(to bottom right, var(--modo-claro-bg-start), var(--modo-claro-bg-end)); /* Degradado en modo claro */
     border: 1px solid var(--card-border-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px var(--card-shadow-color);
