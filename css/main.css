@@ -12,12 +12,13 @@ a {
   text-decoration: none; }
 
 /* Estilos generales */
+/* Estilos generales */
 body {
-  background-color: white;
-  color: black; }
+  background-color: var(--modo-claro-bg-start);
+  color: var(--primary-color); }
 
 .dark-mode {
-  background-color: #03121d;
+  background-color: var(--modo-oscuro-bg-start);
   color: wheat; }
 
 /* Estilos adicionales si es necesario */
@@ -287,6 +288,67 @@ body {
 #avatarComputer {
   width: 25vh; }
 
+/* Estilos para la sección "Sobre mi" */
+#about {
+  background-color: var(--modo-claro-bg-start);
+  padding: 60px 0;
+  color: var(--dark-color);
+  transition: background-color 0.3s, color 0.3s; }
+
+#about h2 {
+  font-size: 2.5rem;
+  font-family: 'Merriweather', serif;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative; }
+
+#about h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 20px auto 0; }
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: var(--dark-color); }
+
+.aboutMe-pic {
+  text-align: center;
+  margin-top: 20px; }
+
+.aboutMe-pic img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; }
+
+.aboutMe-pic img:hover {
+  transform: scale(1.1); }
+
+@media (min-width: 768px) {
+  .aboutMe-pic {
+    margin-top: 0; }
+  .aboutMe-pic img {
+    width: 100%;
+    max-width: 400px; } }
+
+/* Modo oscuro para la sección "Sobre mi" */
+[data-theme="dark"] #about {
+  background-color: var(--modo-oscuro-bg-start);
+  color: var(--link-color); }
+
+[data-theme="dark"] #about p {
+  color: var(--link-color); }
+
+[data-theme="dark"] #about h2::after {
+  background: var(--link-color); }
+
 .about-me {
   background-color: #121212;
   color: white;
@@ -323,7 +385,7 @@ footer p a {
 footer p a:hover {
   color: white; }
 
-/* Variables de tema en el :root */
+/* Variables específicas para los temas */
 :root {
   --modo-claro-bg-start: #f8f9fa;
   --modo-claro-bg-end: #e9ecef;
@@ -338,10 +400,26 @@ footer p a:hover {
   --card-border-color: #100f0f;
   --card-shadow-color: rgba(0, 0, 0, 0.1);
   --card-hover-shadow-color: rgba(0, 0, 0, 0.2);
-  --primary-color: #868e96;
+  --color1: #868e96;
+  --primary-color: wheat;
   --secondary-color: #868e96;
+  --color2: wheat;
   --btn-hover-bg-primary: #5a6268;
-  --btn-hover-bg-secondary: #5a6268; }
+  --btn-hover-bg-secondary: #5a6268;
+  /* Nuevas variables para el color wheat */
+  --color-wheat-claro: #868e96;
+  --color-wheat-oscuro: #f0e68c;
+  /* Modifica el valor según tus preferencias */ }
+
+/* Variables para el modo claro */
+[data-theme="light"] {
+  --primary-color: #0c0d0d;
+  /* Cambiar a un color diferente al "wheat" */ }
+
+/* Variables para el modo oscuro */
+[data-theme="dark"] {
+  --primary-color: wheat;
+  /* Color "wheat" para el modo oscuro */ }
 
 /* Variables específicas para los temas */
 [data-theme="dark"] {
@@ -387,8 +465,22 @@ footer p a:hover {
 .card-body {
   padding: 20px; }
 
+/* Estilo para la sección de descripción */
+.description {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  line-height: 1.6; }
+
+/* Estilo para el texto que sigue a la descripción */
+.following-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.5; }
+
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: var(--color1);
   border: none;
   transition: background-color 0.3s; }
 
@@ -396,7 +488,7 @@ footer p a:hover {
   background-color: var(--btn-hover-bg-primary); }
 
 .btn-secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--color1);
   border: none;
   transition: background-color 0.3s; }
 
@@ -449,7 +541,7 @@ footer p a:hover {
 
 #education p {
   font-size: 1rem;
-  color: var(--secondary-color); }
+  color: var(--primary-color); }
 
 /* Estilos para la sección de habilidades blandas */
 #soft-skills {
